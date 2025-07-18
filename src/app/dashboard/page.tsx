@@ -97,7 +97,7 @@ export default function Dashboard() {
               onClick={() => setIsResumeDialogOpen(true)}
             >
               <Upload className="mr-2 h-4 w-4" />
-              Upload Resume
+              Upload Resume - Slay
             </Button>
             <Button
               size="sm"
