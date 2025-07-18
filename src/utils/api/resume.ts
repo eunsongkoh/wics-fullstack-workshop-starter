@@ -44,7 +44,7 @@ export async function getResumeDetails(userId: string): Promise<Resume> {
   };
 
   resumeSnapshot.docs.forEach((doc) => {
-    resume.experience = doc.get("experience" || []);
+    resume.experience = doc.get("experience");
     resume.other = doc.get("other") || "";
     resume.projects = doc.get("projects") || "";
     resume.skills = doc.get("skills") || "";
